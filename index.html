@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desarrollo web</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Desarrolló Web</h1>
+            <p>
+                Este curso forma parte del programa de Escuelas de Código de la Ciudad de México, tiene como finalidad
+                introducir las herramientas necesarias para comenzar en el desarrollo web. Al finalizar los alumnos
+                tendrán un panorama general de lo que es el desarrollo web, cómo funciona la web, las tecnologías
+                usadas, y serán capaces de construir una página web estática desde cero usando los lenguajes HTML y CSS,
+                para ello a lo largo del curso se realizarán diversos ejemplos desarrollando cada uno de los temas, al
+                finalizar cada uno de ellos se presentarán ejercicios practicas donde los estudiantes implementaran los
+                conocimiento adquiridos.
+            </p>
+            <h2>Un poco de historia</h2>
+            <p>
+                El nacimiento de la web se da el 23 de agosto de 1991 en el CERN (Conseil Européen pour la Recherche
+                Nucléaire) cuando por primera vez en la historia usuarios externos al CERN pudieron empezar a acceder a
+                su última creación. Su desarrolló se dio años antes por el científico informático Tim Berners-Lee, y se
+                trataba de una red con la cual poder conectar varios documentos a través de hipervínculos, con el
+                objetivo de ayudar a los físicos en la búsqueda de la información.
+
+                <img src="img/leeBerner.jpeg" alt="">
+            <p>
+                Para 1993 había 600 sitios, para 1995 la cifra aumentó hasta los 15.000. Hoy, la WWW se ha convertido en
+                el servicio más valorado de Internet. A partir de 2008, había 1500 millones de usuarios de Internet en
+                todo el mundo, 1300 millones de usuarios de correo electrónico, 210 mil millones de correos electrónicos
+                enviados diariamente, 186,7 millones de sitios web y 133 millones de blogs.
+            </p>
+
+        </section>
+        <section>
+            <h2>El lenguaje de la web: HTML</h2>
+
+            <p>
+                Un sitio Web está formado por un conjunto de recursos o páginas web conectadas, generalmente asociado a
+                un tema bien definido, que se ponen a disposición de los usuarios de Internet a través de una dirección
+                web URL.
+                Hoy en día, un sitio web representa el medio más moderno de publicación y comunicación. La creación de
+                una página web requiere el uso de un lenguaje específico, llamado HTML (Hyper Text Markup Language).
+                HTML es un lenguaje de “marcado” que se utiliza para la creación, representación y estructuración del
+                contenido de una página web mediante elementos de formato o etiquetas.Estas etiquetas tienen
+                significados bien definidos, como insertar una imagen, crear un enlace o un párrafo, etc., y
+                generalmente se insertan en el texto de un documento antes de que el navegador web las intérprete y
+                muestre. HTML es un estándar publicado por W3C (World Wide Web Consortium)
+
+            </p>
+
+            <h3>Sintaxis HTML</h3>
+            <p>
+                El lenguaje HTML fue creado para estructurar y dar sentido al contenido de la página web. Su sintaxis
+                gira esencialmente en torno a tres términos básicos: elemento, etiqueta y atributo.
+            </p>
+            <h4>Elementos </h4>
+            <p>
+                Los elementos se refieren a los identificadores que describen objetos (texto, imagen u objeto
+                multimedia) dentro de una página web, incluida la estructura y el contenido. Los elementos estan
+                formados por una etiqueta de apertura, contenido y una etiqueta de cierre.
+            </p>
+
+            <h4>Etiquetas </h4>
+
+            <p>
+                El término “etiqueta” es uno de los conceptos básicos del lenguaje HTML. Los elementos en HTML a menudo
+                se
+                componen
+                de varios conjuntos de etiquetas. Estas etiquetas no se muestran en la página
+                pero es gracias al navegador instalado en el ordenador del usuario que su efecto se mostrará
+                correctamente.
+                Hay dos tipos de etiquetas:
+            </p>
+            <p>
+                <em> Etiquetas emparejadas: </em> formadas por dos etiquetas, una de apertura y otra de cierre. La
+                etiqueta de apertura está marcada al principio con el signo "&lt;" y al final con el signo “&gt;”. La
+                etiqueta de cierre sigue el mismo principio, pero el nombre del elemento está precedido por el carácter
+                de
+                diagonal "/".
+            </p>
+            <p>
+                <em> Ejemplo.- </em> <br> Etiqueta para definir texto importante <br>
+                &lt;strong&gt; mostrar un texto en negrita&lt;/strong &gt; <br>
+            </p>
+
+            <p>
+                <em>Etiquetas singulares:</em> Estas etiquetas se utilizan con mayor frecuencia para insertar un
+                elemento proveniente de un recurso externo en en una ubicación bien definida en la página web. Para este
+                tipo de etiqueta, no es necesario marcar el inicio y final de este elemento.
+            </p>
+            <p> <em>Ejemplo .- </em> <br>
+                Etiqueta para agregar una imagen <br>
+                &lt; img src="http:/logo.jpg" alt="Logo"/ &gt;
+            </p>
+            <p>
+                <b> Nota.- </b>Para no confundir los conceptos de “etiqueta” y “elemento”, consideremos el siguiente
+                ejemplo:
+                <br>
+                &lt;p&gt; Este elemento contiene texto normal y términos en &lt;b&gt; negritas &lt;/b&gt; &lt;/p&gt;
+            </p>
+
+            <p>
+                Además del texto, el elemento de parrafo &lt;p&gt; contiene otras etiquetas (en este caso, &lt; b &gt;
+                como ejemplo), mientras que la etiqueta &lt;b &gt; solo contiene texto. Notamos que el contenido de un
+                elemento pueden ser otro elemento con sus respectivas etiquetas.
+
+            </p>
+
+            <h4>Atributos</h4>
+            <p>
+                Los atributos son propiedades que se utilizan para agregar declaraciones adicionales a un elemento dado
+                (un identificador (id), una fuente (src), etc.). Siempre están incrustados en la etiqueta de apertura y
+                deben estar separados entre sí por al menos un espacio. Cada atributo generalmente acepta un valor entre
+                comillas. Un elemento con atributos puede aceptar la siguiente sintaxis:
+            </p>
+            <p>
+                &lt; nombre_etiqueta atributo="valor" &gt; Contenido del elemento &lt; /nombre_etiqueta &gt;
+            </p>
+
+            <p>
+                <em>Ejemplo.- </em> <br>
+                &lt; video src="video/vacaciones.mp4" &gt; &lt; /video &gt;
+            </p>
+
+        </section>
+        <section>
+            <h2>Estructura básica documento html</h2>
+            <code>
+<pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&lt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;/body>&gt;
+    &lt;/html&gt;
+</pre>
+</code>
+
+            <ul>
+
+                <li>
+                    &lt;!DOCTYPE html&gt;.- Indica la versión del tipo de documento html, en este caso indica que el
+                    documento esta escrito con la version html5, la cual es la versión más reciente y actualmente se
+                    recomienda escribir todas las páginas con esta versión.
+                </li>
+                <li>
+                    &lt;/html&gt;.- Este elemento encierra todo el contenido de la página entera y, a veces, se le
+                    conoce como el
+                    elemento raíz (root element).
+                </li>
+
+                <li>
+                    &lt;head>&lt;/head&gt;.- Sirve para agregar los metadatos de la página, como palabras clave
+                    (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código
+                    CSS
+                    para dar estilo al contenido, etc.
+                </li>
+
+                <li>
+                    &lt;meta charset="utf-8"&gt; Este elemento la codificación de caracteres que tu documento usará en
+                    utf-8 (8-bit Unicode Transformation Format)
+                </li>
+                <li>
+                    &lt;title>&lt;/title&gt; Título de la página.
+                </li>
+
+                <li>
+                    &lt;body>&lt;/body&gt; Encierra todo el contenido visible de la página.
+                </li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>Etiquetas de texto</h2>
+
+            <h3>Párrafo: &lt;p &gt;</h3>
+
+            <p>Esta etiqueta agrega un texto en un párrafo donde no se reconoce saltos de linea ni espacio multiples</p>
+            <p>Ejemplo.- <br>
+                &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi voluptas reiciendis
+                aut, dignissimos temporibus delectus natus placeat quia ipsa odio a odit neque veritatis aliquid nisi
+                error harum recusandae!&lt;/p &gt;
+            </p>
+
+            <h3>Párrafo con preformato: &lt;pre&gt; </h3>
+
+            <p>Permite agregar texto en un parrafo con un formato establecido por el editor de texto, reconoce saltos de
+                linea y espacios multiples</p>
+            <p>Ejemplos.- </p>
+
+            <pre>
+&lt;pre&gt;   
+    We don't need no education
+    We don't need no thought control
+    No dark sarcasm in the classroom
+    Teacher, leave them kids alone
+
+    Hey, teacher, leave them kids alone
+    All in all, it's just another brick in the wall
+    All in all, you're just another brick in the wall
+
+    We don't need no education
+    We don't need no thought control
+    No dark sarcasm in the classroom
+    Teachers, leave them kids alone
+
+    Hey, teacher, leave us kids alone
+    All in all, you're just another brick in the wall
+    All in all, you're just another brick in the wall
+
+    If you don't eat yer meat, you can't have any pudding
+    How can you have any pudding if you don't eat yer meat?
+    You! Yes, you behind the bike stands
+    Stand still, laddy!
+&lt;/pre&gt;
+</pre>
+            <p>Resultado</p>
+            <pre>
+    We don't need no education
+    We don't need no thought control
+    No dark sarcasm in the classroom
+    Teacher, leave them kids alone
+    
+    Hey, teacher, leave them kids alone
+    All in all, it's just another brick in the wall
+    All in all, you're just another brick in the wall
+    
+    We don't need no education
+    We don't need no thought control
+    No dark sarcasm in the classroom
+    Teachers, leave them kids alone
+    
+    Hey, teacher, leave us kids alone
+    All in all, you're just another brick in the wall
+    All in all, you're just another brick in the wall
+    
+    If you don't eat yer meat, you can't have any pudding
+    How can you have any pudding if you don't eat yer meat?
+    You! Yes, you behind the bike stands
+    Stand still, laddy!
+
+</pre>
+            <h3>Texto con énfasis: &lt; em &gt;</h3>
+            <p>Marcar con énfasis las partes importantes de un texto</p>
+
+
+            <h3>Texto importante: &lt;strong&gt; </h3>
+            <p>Resalta con especial énfasis las partes más importantes de un texto.</p>
+
+
+            <p>Ejemplo.-</p>
+
+            <p>
+                &lt;p&gt;
+                &lt;em&gt;El dinero&lt;/em&gt;es importante pero &lt;strong&gt;la salud&lt;/strong&gt; lo es más.
+                &lt;/p&gt;
+            </p>
+
+            <p>Resultado</p>
+
+            <p> <em>El dinero</em> es importante pero <strong>la salud</strong> lo es más. </p>
+
+            <h3>Texto resaltado: &lt;mark&gt;</h3>
+            <p> Representa un texto marcado o resaltado como referencia o anotación</p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;p&gt;
+                El telescopio espacial &lt;mark&gt; Hubble &lt;/mark&gt; de la NASA ha sacado muchas imágenes
+                asombrosas. Una de las más memorables es el mosaico del perfil del Sombrero. Con su magnitud
+                relativamente alta y a una distancia de &lt;mark&gt; 28 millones de años luz &lt;/mark&gt; de la Tierra,
+                Messier 104, nombre formal de Sombrero, se puede ver fácilmente por un telescopio.
+                &lt;/p&gt;
+            </p>
+            <p>Resultado</p>
+            <p> El telescopio espacial <mark> Hubble </mark> de la NASA ha sacado muchas imágenes asombrosas. Una de las
+                más memorables es el mosaico del perfil del Sombrero. Con su magnitud relativamente alta y a una
+                distancia de <mark> 28 millones de años luz </mark> de la Tierra, Messier 104, nombre formal de
+                Sombrero, se puede ver fácilmente por un telescopio. </p>
+
+            <h3> Texto de código </h3>
+
+            <p>Es el apropiado para marcar el código de un programa.</p>
+            <p>Ejemplo.-</p>
+
+
+            <pre>
+&lt;code&gt;
+    &lt;pre&gt;
+    h1{
+        background-color:blue;
+    }
+    &lt;/pre&gt;
+&lt;/code&gt;
+</pre>
+
+
+            <p>Resultado</p>
+            <code>
+<pre>
+h1{
+    background-color:blue;
+}
+</pre>
+</code>
+        </section>
+        <section>
+            <h2>Etiquetas de listas</h2>
+            <h3>Listas ordenadas: &lt; ol &gt; ,&lt; li &gt;</h3>
+            <p>Estas etiquetas permiten agregar texto en formato de lista con una prioridad en el orden de aparición de
+                los elementos.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+    Equipos con más títulos de champions
+    &lt;ol&gt;
+        &lt;li>Real Madrid&lt;/li&gt;
+        &lt;li>Milan&lt;/li&gt;
+        &lt;li>Liverpool&lt;/li&gt;
+    &lt;/ol&gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <ol>
+                <li>Real Madrid</li>
+                <li>Milan</li>
+                <li>Liverpool</li>
+            </ol>
+
+            <h3>Listas desordenadas: &lt; ul &gt; ,&lt; li &gt;</h3>
+            <p>Estas etiquetas permiten agregar texto en formato de lista sin una prioridad en el orden de aparición de
+                los elementos.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+    &lt;ul&gt;
+        &lt;li>Manzanas&lt;/li&gt;
+        &lt;li>Peras&lt;/li&gt;
+        &lt;li>Sandias&lt;/li&gt;
+    &lt;/ul&gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <ul>
+                <li>Manzanas</li>
+                <li>Peras</li>
+                <li>Sandias</li>
+            </ul>
+
+
+
+        </section>
+        <section>
+            <h2>Tablas</h2>
+            <h3>Contenedor de la tabla: &lt; table &gt;</h3>
+            <p>Esta etiqueta encierra todo el contenido de una tabla</p>
+            <h3>Filas: &lt; tr &gt;</h3>
+            <p>Agrega una fila a la tabla</p>
+            <h3>Celdas de encabezado: &lt; th &gt;</h3>
+            <p>Esta etiqueta permite agregar celdas para los encabezados de columna o fila</p>
+            <h3>Datos: &lt; td &gt;</h3>
+            <p>Esta etiqueta permite agregar los diferentes datos dentro de la tabla, deben estar dentro de la etiqueta
+                &lt;tr &gt; </p>
+            <p>Ejemplo.-</p>
+            <table>
+                <tr>
+                    <th>Pais</th>
+                    <th>Habitantes</th>
+                    <th>Territorio</th>
+                    <th>Idioma</th>
+                </tr>
+                <tr>
+                    <td>México</td>
+                    <td>198.9</td>
+                    <td></td>
+                    <td>Español</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>212.6</td>
+                    <td>8516</td>
+                    <td>Portugues</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>38.01</td>
+                    <td>9985</td>
+                    <td>Ingles/Frances</td>
+                </tr>
+
+            </table>
+            <p>Es posible tambien crear celdas que ocupen más de una columna o más de una fila, para ello se usan los
+                atributos <em> colspan </em> y <em> rowspan</em>. Si se busca que una celda se expanda sobre varias
+                columnas se emplea colspan con el valor del numero de columnas que ocupara dicha celda, es decir si
+                buscamos se expanda 2 columnas se agregara el atributo colspan="2".El atributo <em>rowspan</em> se usa
+                de forma similar, se coloca en la celda que ocupara mas de una fila indicando en el valor el numero de
+                filas. </p>
+
+            <h3>Agrupación de elementos de tablas</h3>
+            <h4>Encabezado de tabla: &lt; thead &gt;</h4>
+            <p>Se emplea para agrupar los nombres de las columnas del encabezado de las tablas, util para dar estilos
+                con css.</p>
+            <h4>Cuerpo de la tabla: &lt; tbody &gt;</h4>
+            <p>Define el cuerpo de la tabla donde se encuentran los datos</p>
+            <h4>Pie de tabla: &lt; tfoot &gt; </h4>
+            <p>Utilizado para definir resumenes de los datos, como sumas promedio o totales.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+&lt;table &gt;
+    &lt;thead &gt;
+        &lt;tr&gt;
+            &lt;th rowspan="2"&gt;Denominación&lt;/th &gt;
+            &lt;th colspan="4"&gt;2021 &lt;/th &gt;  
+        &lt;/tr&gt;
+        &lt;tr&gt;                       
+            &lt;th&gt;1T&lt;/th &gt;
+            &lt;th&gt;2T&lt;/th &gt;
+            &lt;th&gt;3T&lt;/th &gt;
+            &lt;th&gt;4T &lt;/th &gt;
+        &lt;/tr &gt;
+    &lt;/thead &gt;
+    &lt;tbody &gt;
+        &lt;tr &gt;                       
+            &lt;th&gt;Actividades Primarias &lt;/th &gt;
+            &lt;td&gt;594,616 &lt;/td &gt;
+            &lt;td&gt;604,082 &lt;/td &gt;
+            &lt;td&gt;611,296 &lt;/td &gt;
+            &lt;td&gt;617,923 &lt;/td &gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;                        
+            &lt;th&gt;Actividades Secundarias&lt;/th &gt;
+            &lt;td&gt;5,065,926 &lt;/td&gt;
+            &lt;td&gt;5,099,962 &lt;/td&gt;
+            &lt;td&gt;5,112,189 &lt;/td&gt;
+            &lt;td&gt;5,151,507 &lt;/td&gt;
+        &lt;/tr &gt;
+        &lt;tr &gt;                        
+            &lt;th &gt;Actividades Terciarias&lt;/th &gt;
+            &lt;td&gt;11,339,930 &lt;/td&gt;
+            &lt;td&gt;11,449,416 &lt;/td&gt;
+            &lt;td&gt;11,320,953 &lt;/td&gt;
+            &lt;td&gt;11,288,555 &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody &gt;
+
+&lt;/table &gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Denominación</th>
+                        <th colspan="4">2021 </th>
+                    </tr>
+                    <tr>
+                        <th>1T</th>
+                        <th>2T</th>
+                        <th>3T</th>
+                        <th>4T </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Actividades Primarias </th>
+                        <td>594,616 </td>
+                        <td>604,082 </td>
+                        <td>611,296 </td>
+                        <td>617,923 </td>
+                    </tr>
+                    <tr>
+                        <th>Actividades Secundarias</th>
+                        <td>5,065,926 </td>
+                        <td>5,099,962 </td>
+                        <td>5,112,189 </td>
+                        <td>5,151,507 </td>
+                    </tr>
+                    <tr>
+                        <th>Actividades Terciarias</th>
+                        <td>11,339,930 </td>
+                        <td>11,449,416 </td>
+                        <td>11,320,953 </td>
+                        <td>11,288,555 </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Totales</th>
+                        <td>17,725,438</td>
+                        <td>17,893,268</td>
+                        <td>17,798,621</td>
+                        <td>17,853,898</td>
+                    </tr>
+                </tfoot>
+                <caption>Producto Interno Bruto Trimestral, cifras desestacionalizadas(Millones de pesos a precios de
+                    2013).</caption>
+            </table>
+
+            <p>La etiqueta &lt;caption&gt; permite agregar un título a la tabla, por default se mostrará al inicio de la
+                tabla, pero puede ser cambiado con estilos de CSS</p>
+        </section>
+
+        <section>
+            <h2>Etiquetas multimedia</h2>
+            <h3>Imágenes</h3>
+            <p>Permite agregar imágenes, debe incluir el atributo obligatorio <em>src</em> cuyo valor corresponde a la
+                ruta donde se encuentra la imágen. </p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;img src="img/esme.webp" alt="cascada esmeralda, oaxaca"&gt;
+            </p>
+            <p>Resultado</p>
+            <img src="img/esme.webp" alt="cascada esmeralda, oaxaca">
+
+            <h3>Video</h3>
+            <p>Permite agregar video directamente desde el navegador, agregada  en la versión de HTML5</p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;video src="video/big_buck_bunny.ogv" controls&gt; &lt;/video&gt;
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>src</code></td>
+                        <td><em>Dirección URL</em></td>
+                        <td>Video a reproducir. Obligatoria si actua como etiqueta contenedora.</td>
+                    </tr>
+                    <tr>
+                        <td><code>poster</code></td>
+                        <td>Dirección URL de la imagen</td>
+                        <td>Muestra una imagen a modo de presentación.</td>
+                    </tr>
+                    <tr>
+                        <td><code>autoplay</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Comienza a reproducir el video automáticamente.</td>
+                    </tr>
+                    <tr>
+                        <td><code>loop</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Vuelve a iniciar el video cuando finaliza su reproducción (bucle).</td>
+                    </tr>
+                    <tr>
+                        <td><code>muted</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Establece el video sin sonido (silenciado).</td>
+                    </tr>
+                    <tr>
+                        <td><code>controls</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Muestra los controles de reproducción. Por defecto no se muestran.</td>
+                    </tr>
+                    <tr>
+                        <td><code>width</code></td>
+                        <td><em>tamaño</em></td>
+                        <td>Indica el tamaño de ancho del video.</td>
+                    </tr>
+                    <tr>
+                        <td><code>height</code></td>
+                        <td><em>tamaño</em></td>
+                        <td>Indica el tamaño de alto del video.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>La etiqueta &lt;video&gt; también puede actuar como etiqueta contenedora e incluir varias etiquetas HTML para dotar de mayor compatibilidad, o capacidades adicionales.</p>
+            <h4>Video con alternativas: &lt;source &gt;</h4>
+            <p>Si utilizamos la etiqueta &lt;video&gt; como etiqueta contenedora, podemos incluir etiquetas &lt;source &gt;  en su interior para proporcionar formatos alternativos y tener mayor compatibilidad con otros navegadores y navegadores antiguos que no soporten HTML5:</p>
+
+            <p>Ejemplo</p>
+<pre>
+<code>
+    &lt;video controls&gt;
+        &lt;source src="video/big_buck_bunny.webm" type="video/webm"&gt;
+        &lt;source src="video/big_buck_bunny.ogv" type="video/ogg"&gt;
+        &lt;source src="video/big_buck_bunny.mp4" type="video/mp4"&gt;
+        &lt;img src="imagen.png" alt="Video no soportado" /&gt;
+        Lo lamento; su navegador no soporta video HTML5.
+    &lt;/video&gt;
+</code>
+</pre>
+            <video controls>
+                <source src="video/big_buck_bunny.webm" type="video/webm">
+                <source src="video/big_buck_bunny.ogv" type="video/ogg">
+                <source src="video/big_buck_bunny.mp4" type="video/mp4">
+                <img src="imagen.png" alt="Video no soportado" />
+                Lo lamento; su navegador no soporta video HTML5.
+            </video>
+        </section>
+    </main>
+
+</body>
+
+</html>
