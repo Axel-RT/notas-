@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title> Desarrollo web </title>
     <style>
-     h1,h2,h3{
+     h1{
         background-color: rgba(113, 38, 184, 0.637);
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
@@ -24,6 +24,28 @@
     }
      p{
         background-color: rgb(255, 251, 8); 
+     }
+
+     #historia{
+        color:green;
+        font-size: 40px;
+        background-color:rgb(146, 119, 153);
+        margin:45px;
+     }
+    .hola{
+        color:orange;
+     }
+     .pro{
+        margin: auto;
+        padding: 5%;
+        border-width: 20px;
+        border-style:outset;
+        border-color: aqua;
+        border-radius: 15px;
+        width: 50%;
+        height: auto;
+        font-size: 100%;
+        box-shadow:45px 20px 38px 21px pink;
      }
     </style>
 
@@ -42,7 +64,7 @@
                 finalizar cada uno de ellos se presentarán ejercicios practicas donde los estudiantes implementaran los
                 conocimiento adquiridos.
             </p>
-            <h2>Un poco de historia</h2>
+            <h2 id="historia">Un poco de historia</h2>
             <p>
                 El nacimiento de la web se da el 23 de agosto de 1991 en el CERN (Conseil Européen pour la Recherche
                 Nucléaire) cuando por primera vez en la historia usuarios externos al CERN pudieron empezar a acceder a
@@ -60,7 +82,7 @@
 
         </section>
         <section>
-            <h2>El lenguaje de la web: HTML</h2>
+            <h2 class="orange">El lenguaje de la web: HTML</h2>
 
             <p>
                 Un sitio Web está formado por un conjunto de recursos o páginas web conectadas, generalmente asociado a
@@ -76,7 +98,7 @@
 
             </p>
 
-            <h3>Sintaxis HTML</h3>
+            <h3 class="hola">Sintaxis HTML</h3>
             <p>
                 El lenguaje HTML fue creado para estructurar y dar sentido al contenido de la página web. Su sintaxis
                 gira esencialmente en torno a tres términos básicos: elemento, etiqueta y atributo.
@@ -88,7 +110,7 @@
                 formados por una etiqueta de apertura, contenido y una etiqueta de cierre.
             </p>
 
-            <h4>Etiquetas </h4>
+            <h4 class="hola">Etiquetas </h4>
 
             <p>
                 El término “etiqueta” es uno de los conceptos básicos del lenguaje HTML. Los elementos en HTML a menudo
@@ -151,7 +173,7 @@
             </p>
 
         </section>
-        <section>
+        <section class="pro">
             <h2>Estructura básica documento html</h2>
             <code>
 <pre>
@@ -393,7 +415,7 @@ h1{
             <p>Esta etiqueta permite agregar los diferentes datos dentro de la tabla, deben estar dentro de la etiqueta
                 &lt;tr &gt; </p>
             <p>Ejemplo.-</p>
-            <table>
+            <table class="pro">
                 <tr>
                     <th>Pais</th>
                     <th>Habitantes</th>
@@ -657,4 +679,4 @@ h1{
 </form>
 </body>
 </html>
- border-radius
+
