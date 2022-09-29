@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="in">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +38,7 @@
         margin: auto;
         padding: 5%;
         border-width: 20px;
-        border-style:outset;
+        border-style:double;
         border-color: aqua;
         border-radius: 15px;
         width: 50%;
@@ -47,14 +46,32 @@
         font-size: 100%;
         box-shadow:45px 20px 38px 21px pink;
      }
+     main{
+        background-image:url("img/cascada.jpg") ;
+     }
+     .box{
+        animation: 1.5s infinite alternate-reverse;
+    }
+    @keyframesrodar{
+        100%{transform:rotate(360deg);}
+    }
     </style>
 
         </head>
 
 <body>
+    <header>
+        <img src="" alt="">
+        <nav>
+        <a href="https://code.org/minecraft" target="_blank">PC </a>
+        <a href="html/pensamiento.html">DW</a>
+        <a href="#etiquetas">BC</a>
+        </nav>
+        <h1>Escuelas de Código</h1>
+        </header>
     <main>
         <section>
-            <h1>Desarrolló Web</h1>
+            <h1 class="box">Desarrolló Web</h1>
             <p>
                 Este curso forma parte del programa de Escuelas de Código de la Ciudad de México, tiene como finalidad
                 introducir las herramientas necesarias para comenzar en el desarrollo web. Al finalizar los alumnos
@@ -648,6 +665,7 @@ h1{
     &lt;/video&gt;
 </code>
 </pre>
+<section id="etiquetas"></section>
             <video controls>
                 <source autocapitalize="video/big_buck_bunny.webm" type="video/webm">
                 <source autocapitalize="video/big_buck_bunny.ogv" type="video/ogg">
@@ -657,8 +675,10 @@ h1{
             </video>
         </section>
     </main>
-
-<video controls>
+<footer>
+    <p>En las Escuelas de Código podrás aprender programación de manera gratuita en cualquiera de las 140 sedes de PILARES. En las Escuelas de Código podrás aprender programación de manera gratuita en cualquiera de las 140 sedes de PILARES donde se imparten dos cursos diferentes: Análisis de datos nivel junior. </footer>
+    </p>
+        <video controls>
     <source loop="video/videoplayback.mp4" type="video/mp4">
 </video>
 <form>
